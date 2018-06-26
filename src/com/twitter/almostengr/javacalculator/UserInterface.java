@@ -105,6 +105,7 @@ public class UserInterface {
 		System.out.println("-----------");
 		System.out.println("1) Compound Interest");
 		System.out.println("2) Sales Tax");
+		System.out.println("3) Sales Tax with Discount");
 		System.out.println("Q) Exit Calculator");
 		System.out.println("");
 		System.out.print("Enter your selection: ");
