@@ -23,7 +23,7 @@ public class SalesTax {
 		return discountPercent;
 	}
 	public static void setDiscountPercent(double discountPercent) {
-		SalesTax.discountPercent = discountPercent;
+		SalesTax.discountPercent = discountPercent / 100;
 	}
 	public static double getTaxRate() {
 		return taxRate;
