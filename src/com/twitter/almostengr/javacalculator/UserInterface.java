@@ -95,6 +95,9 @@ public class UserInterface {
 			mainMenu();
 			i = inputText.nextLine();
 		}
+		
+		// exit the scanner
+		inputText.close();
 	}
 
 	private static void mainMenu() {
