@@ -62,6 +62,25 @@ public class UserInterface {
 					
 					break;
 					
+				case "3":
+					System.out.println("");
+					SalesTax calcSalesTaxDiscount = new SalesTax();
+					
+					System.out.println("Calculating sales tax...");
+					
+					System.out.println("Amount");
+					calcSalesTaxDiscount.setAmount(inputText.nextDouble());
+					
+					System.out.println("Tax Rate");
+					calcSalesTaxDiscount.setTaxRate(inputText.nextDouble());
+					
+					System.out.println("Discount Rate: ");
+					calcSalesTaxDiscount.setDiscountPercent(inputText.nextDouble());
+					
+					calcSalesTaxDiscount.calculateSalesTax();
+					break;
+					
+					
 				case "Q":
 				case "q":
 					System.out.println("Good bye!");
