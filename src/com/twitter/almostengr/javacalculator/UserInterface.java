@@ -78,8 +78,7 @@ public class UserInterface {
 					calcSalesTaxDiscount.setDiscountPercent(inputText.nextDouble());
 					
 					calcSalesTaxDiscount.calculateSalesTax();
-					break;
-					
+					break;					
 					
 				case "Q":
 				case "q":
