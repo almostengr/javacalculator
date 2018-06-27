@@ -4,7 +4,6 @@
 package com.twitter.almostengr.javacalculator;
 
 import java.util.Scanner;
-
 import javax.swing.plaf.InputMapUIResource;
 
 /**
@@ -20,11 +19,13 @@ public class UserInterface {
 		Scanner inputText = new Scanner(System.in);
 		String i = null;
 	
+		// display the main menu
 		mainMenu();
+		
+		// read the next line for the selection
 		i = inputText.nextLine();
 		
 		while (i != "Q") {
-
 			System.out.println("");
 			
 			switch(i) {
@@ -45,8 +46,7 @@ public class UserInterface {
 					System.out.print("Number of Years: ");
 					calculation.setYears(inputText.nextInt());
 					
-					calculation.calculateCompoundInterest();
-					
+					calculation.calculateCompoundInterest();					
 					break;
 					
 				case "2":
@@ -61,7 +61,6 @@ public class UserInterface {
 					calcSalesTax.setTaxRate(inputText.nextDouble());
 					
 					calcSalesTax.calculateSalesTax();
-					
 					break;
 					
 				case "3":
@@ -141,7 +140,10 @@ public class UserInterface {
 					System.out.println("");
 			}
 
+			// display the main menu
 			mainMenu();
+			
+			// read the selection from the next
 			i = inputText.nextLine();
 		}
 		
@@ -151,7 +153,7 @@ public class UserInterface {
 
 	private static void mainMenu() {
 		System.out.println("MAIN MENU");
-		System.out.println("-----------");
+		System.out.println("--------------------------");
 		System.out.println("1) Compound Interest");
 		System.out.println("2) Sales Tax");
 		System.out.println("3) Sales Tax with Discount");
@@ -163,3 +165,5 @@ public class UserInterface {
 		System.out.print("Enter your selection: ");
 	}
 }
+
+
