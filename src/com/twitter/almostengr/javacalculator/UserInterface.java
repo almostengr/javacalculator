@@ -5,6 +5,8 @@ package com.twitter.almostengr.javacalculator;
 
 import java.util.Scanner;
 
+import javax.swing.plaf.InputMapUIResource;
+
 /**
  * @author almostengineer
  *
@@ -112,6 +114,20 @@ public class UserInterface {
 					
 					calcLoanAmortization.calcLoanAmortization();
 					break;
+				
+				case "6":
+					RateOfReturn calcRoR = new RateOfReturn();
+					
+					System.out.println("Calculating rate of return...");
+					
+					System.out.print("Initial value: ");
+					calcRoR.setInitialValue(inputText.nextDouble());
+					
+					System.out.print("Final value: ");
+					calcRoR.setFinalValue(inputText.nextDouble());
+					
+					calcRoR.calcRateOfReturn();
+					break;
 					
 				case "Q":
 				case "q":
@@ -141,6 +157,7 @@ public class UserInterface {
 		System.out.println("3) Sales Tax with Discount");
 		System.out.println("4) Simple Interest");
 		System.out.println("5) Loan Amortization");
+		System.out.println("6) Rate Of Return");
 		System.out.println("Q) Exit Calculator");
 		System.out.println("");
 		System.out.print("Enter your selection: ");
