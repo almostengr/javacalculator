@@ -9,25 +9,13 @@ public class CompoundInterest {
 	private static double interestRate; // represents r
 	private static int compounded; // represents n
 	private static int years; // represents t
-	
-	public static double getAccumulated() {
-		return accumulated;
-	}
-	
+		
 	public static void setAccumulated(double accumulated) {
 		CompoundInterest.accumulated = accumulated;
 	}
-	
-	public static double getPrincipal() {
-		return principal;
-	}
-	
+		
 	public static void setPrincipal(double principal) {
 		CompoundInterest.principal = principal;
-	}
-	
-	public static double getInterestRate() {
-		return interestRate;
 	}
 	
 	public static void setInterestRate(double interestRate) {
@@ -35,16 +23,8 @@ public class CompoundInterest {
 		CompoundInterest.interestRate = interestRate / 100;
 	}
 	
-	public static int getCompounded() {
-		return compounded;
-	}
-	
 	public static void setCompounded(int compounded) {
 		CompoundInterest.compounded = compounded;
-	}
-	
-	public static int getYears() {
-		return years;
 	}
 	
 	public static void setYears(int years) {
