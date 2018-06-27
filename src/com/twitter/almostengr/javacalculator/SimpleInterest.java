@@ -6,24 +6,12 @@ public class SimpleInterest {
 	private static double time; 
 	private static double total;
 	
-	public static double getPrincipal() {
-		return principal;
-	}
-
 	public static void setPrincipal(double principal) {
 		SimpleInterest.principal = principal;
 	}
 
-	public static double getInterestRate() {
-		return interestRate;
-	}
-
 	public static void setInterestRate(double interestRate) {
 		SimpleInterest.interestRate = interestRate;
-	}
-
-	public static double getTime() {
-		return time;
 	}
 
 	public static void setTime(double time) {
