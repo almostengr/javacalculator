@@ -50,12 +50,12 @@ public class UserInterface {
 				case "2":
 					SalesTax calcSalesTax = new SalesTax();
 					
-					System.out.println("Calculating sales tax...");
+					System.out.print("Calculating sales tax...");
 					
-					System.out.println("Amount");
+					System.out.print("Amount");
 					calcSalesTax.setAmount(inputText.nextDouble());
 					
-					System.out.println("Tax Rate");
+					System.out.print("Tax Rate");
 					calcSalesTax.setTaxRate(inputText.nextDouble());
 					
 					calcSalesTax.calculateSalesTax();
@@ -65,15 +65,15 @@ public class UserInterface {
 				case "3":
 					SalesTax calcSalesTaxDiscount = new SalesTax();
 					
-					System.out.println("Calculating sales tax...");
+					System.out.print("Calculating sales tax...");
 					
-					System.out.println("Amount");
+					System.out.print("Amount");
 					calcSalesTaxDiscount.setAmount(inputText.nextDouble());
 					
-					System.out.println("Tax Rate");
+					System.out.print("Tax Rate");
 					calcSalesTaxDiscount.setTaxRate(inputText.nextDouble());
 					
-					System.out.println("Discount Rate: ");
+					System.out.print("Discount Rate: ");
 					calcSalesTaxDiscount.setDiscountPercent(inputText.nextDouble());
 					
 					calcSalesTaxDiscount.calculateSalesTax();
@@ -82,15 +82,15 @@ public class UserInterface {
 				case "4":
 					SimpleInterest calcSimpleInterest = new SimpleInterest();
 					
-					System.out.println("Calculating simple interest...");
+					System.out.print("Calculating simple interest...");
 					
-					System.out.println("Principal: ");
+					System.out.print("Principal: ");
 					calcSimpleInterest.setPrincipal(inputText.nextDouble());
 					
-					System.out.println("Interest: ");
+					System.out.print("Interest: ");
 					calcSimpleInterest.setInterestRate(inputText.nextDouble());
 					
-					System.out.println("Time: ");
+					System.out.print("Time: ");
 					calcSimpleInterest.setTime(inputText.nextDouble());
 					
 					calcSimpleInterest.calculateSimpleInterest();
@@ -99,15 +99,15 @@ public class UserInterface {
 				case "5":
 					LoanAmortization calcLoanAmortization = new LoanAmortization();
 					
-					System.out.println("Calculating loan amortization...");
+					System.out.print("Calculating loan amortization...");
 					
-					System.out.println("Principal: ");
+					System.out.print("Principal: ");
 					calcLoanAmortization.setPrincipal(inputText.nextDouble());
 					
-					System.out.println("Interest: ");
+					System.out.print("Interest: ");
 					calcLoanAmortization.setInterestRate(inputText.nextDouble());
 					
-					System.out.println("Pay Periods: ");
+					System.out.print("Pay Periods: ");
 					calcLoanAmortization.setPayPeriods(inputText.nextInt());
 					
 					calcLoanAmortization.calcLoanAmortization();
