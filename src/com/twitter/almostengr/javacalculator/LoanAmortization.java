@@ -6,24 +6,12 @@ public class LoanAmortization {
 	private static double interestRate;
 	private static int payPeriods;
 	
-	public static double getPrincipal() {
-		return principal;
-	}
-
 	public static void setPrincipal(double principal) {
 		LoanAmortization.principal = principal;
 	}
 
-	public static double getInterestRate() {
-		return interestRate;
-	}
-
 	public static void setInterestRate(double interestRate) {
 		LoanAmortization.interestRate = interestRate / 100;
-	}
-
-	public static int getPayPeriods() {
-		return payPeriods;
 	}
 
 	public static void setPayPeriods(int payPeriods) {
