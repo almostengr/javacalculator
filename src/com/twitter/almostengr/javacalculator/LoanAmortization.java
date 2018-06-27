@@ -31,6 +31,7 @@ public class LoanAmortization {
 	}
 
 	public static void calcLoanAmortization() {
+		// Loan Amortization formula
 		// A = P * (( r * (1 + r) ^ n) / ((1 + r) ^ n - 1))
 		
 		paymentPerPeriod = principal * ((interestRate * Math.pow((1 + interestRate), payPeriods)) / (Math.pow((1 + interestRate), payPeriods) - 1));
