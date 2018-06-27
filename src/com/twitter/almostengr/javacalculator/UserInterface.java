@@ -22,9 +22,11 @@ public class UserInterface {
 		i = inputText.nextLine();
 		
 		while (i != "Q") {
+
+			System.out.println("");
+			
 			switch(i) {
 				case "1":
-					System.out.println("");
 					CompoundInterest calculation = new CompoundInterest();
 					
 					System.out.println("Calculating compound interest...");
@@ -45,8 +47,7 @@ public class UserInterface {
 					
 					break;
 					
-				case "2": 
-					System.out.println("");
+				case "2":
 					SalesTax calcSalesTax = new SalesTax();
 					
 					System.out.println("Calculating sales tax...");
@@ -62,7 +63,6 @@ public class UserInterface {
 					break;
 					
 				case "3":
-					System.out.println("");
 					SalesTax calcSalesTaxDiscount = new SalesTax();
 					
 					System.out.println("Calculating sales tax...");
@@ -80,7 +80,6 @@ public class UserInterface {
 					break;
 					
 				case "4":
-					System.out.println("");
 					SimpleInterest calcSimpleInterest = new SimpleInterest();
 					
 					System.out.println("Calculating simple interest...");
@@ -95,6 +94,23 @@ public class UserInterface {
 					calcSimpleInterest.setTime(inputText.nextDouble());
 					
 					calcSimpleInterest.calculateSimpleInterest();
+					break;
+				
+				case "5":
+					LoanAmortization calcLoanAmortization = new LoanAmortization();
+					
+					System.out.println("Calculating loan amortization...");
+					
+					System.out.println("Principal: ");
+					calcLoanAmortization.setPrincipal(inputText.nextDouble());
+					
+					System.out.println("Interest: ");
+					calcLoanAmortization.setInterestRate(inputText.nextDouble());
+					
+					System.out.println("Pay Periods: ");
+					calcLoanAmortization.setPayPeriods(inputText.nextInt());
+					
+					calcLoanAmortization.calcLoanAmortization();
 					break;
 					
 				case "Q":
@@ -124,6 +140,7 @@ public class UserInterface {
 		System.out.println("2) Sales Tax");
 		System.out.println("3) Sales Tax with Discount");
 		System.out.println("4) Simple Interest");
+		System.out.println("5) Loan Amortization");
 		System.out.println("Q) Exit Calculator");
 		System.out.println("");
 		System.out.print("Enter your selection: ");
