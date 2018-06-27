@@ -19,7 +19,7 @@ public class LoanAmortization {
 	}
 
 	public static void setInterestRate(double interestRate) {
-		LoanAmortization.interestRate = interestRate;
+		LoanAmortization.interestRate = interestRate / 100;
 	}
 
 	public static int getPayPeriods() {
@@ -38,3 +38,5 @@ public class LoanAmortization {
 		System.out.println("Payment Per Period: " + paymentPerPeriod);
 	}
 }
+
+
