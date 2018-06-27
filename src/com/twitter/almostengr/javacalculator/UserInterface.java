@@ -78,7 +78,25 @@ public class UserInterface {
 					calcSalesTaxDiscount.setDiscountPercent(inputText.nextDouble());
 					
 					calcSalesTaxDiscount.calculateSalesTax();
-					break;					
+					break;
+					
+				case "4":
+					System.out.println("");
+					SimpleInterest calcSimpleInterest = new SimpleInterest();
+					
+					System.out.println("Calculating simple interest...");
+					
+					System.out.println("Principal: ");
+					calcSimpleInterest.setPrincipal(inputText.nextDouble());
+					
+					System.out.println("Interest: ");
+					calcSimpleInterest.setInterestRate(inputText.nextDouble());
+					
+					System.out.println("Time: ");
+					calcSimpleInterest.setTime(inputText.nextDouble());
+					
+					calcSimpleInterest.calculateSimpleInterest();
+					break;
 					
 				case "Q":
 				case "q":
