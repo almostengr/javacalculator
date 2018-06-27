@@ -13,33 +13,22 @@ public class SalesTax {
 	private static double discountdollar = 0;
 	private static double discountPercent = 0;
 	
-	public static double getDiscountdollar() {
-		return discountdollar;
-	}
 	public static void setDiscountdollar(double discountdollar) {
 		SalesTax.discountdollar = discountdollar;
 	}
-	public static double getDiscountPercent() {
-		return discountPercent;
-	}
+	
 	public static void setDiscountPercent(double discountPercent) {
 		SalesTax.discountPercent = discountPercent / 100;
 	}
-	public static double getTaxRate() {
-		return taxRate;
-	}
+	
 	public static void setTaxRate(double taxRate) {
 		SalesTax.taxRate = taxRate / 100;
 	}
-	public static double getAmount() {
-		return amount;
-	}
+	
 	public static void setAmount(double amount) {
 		SalesTax.amount = amount;
 	}
-	public static double getSalesTotal() {
-		return salesTotal;
-	}
+	
 	public static void setSalesTotal(double salesTotal) {
 		SalesTax.salesTotal = salesTotal;
 	}
