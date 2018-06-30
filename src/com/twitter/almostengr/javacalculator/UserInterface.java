@@ -20,13 +20,21 @@ public class UserInterface {
 		String i = null;
 	
 		// display the main menu
-		mainMenu();
+		// mainMenu();
 		
 		// read the next line for the selection
-		i = inputText.nextLine();
+		// i = inputText.nextLine();
 		
 		while (i != "Q") {
 			System.out.println("");
+
+			
+			// display the main menu
+			mainMenu();
+			
+			// read the selection from the next
+			// i = inputText.nextLine();
+			i = inputText.
 			
 			switch(i) {
 				case "1":
@@ -153,12 +161,9 @@ public class UserInterface {
 					System.out.println("");
 					System.out.println("");
 			}
-
-			// display the main menu
-			mainMenu();
 			
-			// read the selection from the next
-			i = inputText.nextLine();
+			// reset the variable
+			i = "";
 		}
 		
 		// exit the scanner
