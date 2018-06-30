@@ -128,6 +128,20 @@ public class UserInterface {
 					calcRoR.calcRateOfReturn();
 					break;
 					
+				case "7":
+					Area calcArea = new Area();
+					
+					System.out.println("Calculating area...");
+					
+					System.out.print("Length: ");
+					calcArea.setLength(inputText.nextDouble());
+					
+					System.out.print("Width: ");
+					calcArea.setWidth(inputText.nextDouble());
+					
+					calcArea.calculateArea();
+					break;
+					
 				case "Q":
 				case "q":
 					System.out.println("Good bye!");
@@ -160,6 +174,7 @@ public class UserInterface {
 		System.out.println("4) Simple Interest");
 		System.out.println("5) Loan Amortization");
 		System.out.println("6) Rate Of Return");
+		System.out.println("7) Area"); 
 		System.out.println("Q) Exit Calculator");
 		System.out.println("");
 		System.out.print("Enter your selection: ");
