@@ -6,6 +6,8 @@ package com.twitter.almostengr.javacalculator;
 import java.util.Scanner;
 import javax.swing.plaf.InputMapUIResource;
 
+import com.sun.xml.internal.messaging.saaj.packaging.mime.util.QDecoderStream;
+
 /**
  * @author almostengineer
  *
@@ -17,7 +19,7 @@ public class UserInterface {
 	 */
 	public static void main(String[] args) {
 		Scanner inputText = new Scanner(System.in);
-		String i = null;
+		String selection = null;
 	
 		// display the main menu
 		// mainMenu();
@@ -25,7 +27,7 @@ public class UserInterface {
 		// read the next line for the selection
 		// i = inputText.nextLine();
 		
-		while (i != "Q") {
+		while (selection != "Q" || selection != "q") {
 			System.out.println("");
 
 			
@@ -33,10 +35,9 @@ public class UserInterface {
 			mainMenu();
 			
 			// read the selection from the next
-			// i = inputText.nextLine();
-			i = inputText.
+			selection = inputText.nextLine();
 			
-			switch(i) {
+			switch(selection) {
 				case "1":
 					CompoundInterest calculation = new CompoundInterest();
 					
@@ -163,7 +164,7 @@ public class UserInterface {
 			}
 			
 			// reset the variable
-			i = "";
+			selection = "";
 		}
 		
 		// exit the scanner
