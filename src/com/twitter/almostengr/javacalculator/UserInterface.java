@@ -43,16 +43,16 @@ public class UserInterface {
 					
 					System.out.println("Calculating compound interest...");
 					
-					System.out.print("Principal: ");
+					System.out.println("Principal: ");
 					calculation.setPrincipal(inputText.nextDouble());
 					
-					System.out.print("Interest Rate: ");
+					System.out.println("Interest Rate: ");
 					calculation.setInterestRate(inputText.nextDouble());
 					
-					System.out.print("Compounded Per Year: ");
+					System.out.println("Compounded Per Year: ");
 					calculation.setCompounded(inputText.nextInt());
 					
-					System.out.print("Number of Years: ");
+					System.out.println("Number of Years: ");
 					calculation.setYears(inputText.nextInt());
 					
 					calculation.calculateCompoundInterest();					
@@ -61,12 +61,12 @@ public class UserInterface {
 				case "2":
 					SalesTax calcSalesTax = new SalesTax();
 					
-					System.out.print("Calculating sales tax...");
+					System.out.println("Calculating sales tax...");
 					
-					System.out.print("Amount");
+					System.out.println("Amount");
 					calcSalesTax.setAmount(inputText.nextDouble());
 					
-					System.out.print("Tax Rate");
+					System.out.println("Tax Rate");
 					calcSalesTax.setTaxRate(inputText.nextDouble());
 					
 					calcSalesTax.calculateSalesTax();
@@ -75,15 +75,15 @@ public class UserInterface {
 				case "3":
 					SalesTax calcSalesTaxDiscount = new SalesTax();
 					
-					System.out.print("Calculating sales tax...");
+					System.out.println("Calculating sales tax...");
 					
-					System.out.print("Amount");
+					System.out.println("Amount");
 					calcSalesTaxDiscount.setAmount(inputText.nextDouble());
 					
-					System.out.print("Tax Rate");
+					System.out.println("Tax Rate");
 					calcSalesTaxDiscount.setTaxRate(inputText.nextDouble());
 					
-					System.out.print("Discount Rate: ");
+					System.out.println("Discount Rate: ");
 					calcSalesTaxDiscount.setDiscountPercent(inputText.nextDouble());
 					
 					calcSalesTaxDiscount.calculateSalesTax();
@@ -92,15 +92,15 @@ public class UserInterface {
 				case "4":
 					SimpleInterest calcSimpleInterest = new SimpleInterest();
 					
-					System.out.print("Calculating simple interest...");
+					System.out.println("Calculating simple interest...");
 					
-					System.out.print("Principal: ");
+					System.out.println("Principal: ");
 					calcSimpleInterest.setPrincipal(inputText.nextDouble());
 					
-					System.out.print("Interest: ");
+					System.out.println("Interest: ");
 					calcSimpleInterest.setInterestRate(inputText.nextDouble());
 					
-					System.out.print("Time: ");
+					System.out.println("Time: ");
 					calcSimpleInterest.setTime(inputText.nextDouble());
 					
 					calcSimpleInterest.calculateSimpleInterest();
@@ -109,15 +109,15 @@ public class UserInterface {
 				case "5":
 					LoanAmortization calcLoanAmortization = new LoanAmortization();
 					
-					System.out.print("Calculating loan amortization...");
+					System.out.println("Calculating loan amortization...");
 					
-					System.out.print("Principal: ");
+					System.out.println("Principal: ");
 					calcLoanAmortization.setPrincipal(inputText.nextDouble());
 					
-					System.out.print("Interest: ");
+					System.out.println("Interest: ");
 					calcLoanAmortization.setInterestRate(inputText.nextDouble());
 					
-					System.out.print("Pay Periods: ");
+					System.out.println("Pay Periods: ");
 					calcLoanAmortization.setPayPeriods(inputText.nextInt());
 					
 					calcLoanAmortization.calcLoanAmortization();
@@ -128,10 +128,10 @@ public class UserInterface {
 					
 					System.out.println("Calculating rate of return...");
 					
-					System.out.print("Initial value: ");
+					System.out.println("Initial value: ");
 					calcRoR.setInitialValue(inputText.nextDouble());
 					
-					System.out.print("Final value: ");
+					System.out.println("Final value: ");
 					calcRoR.setFinalValue(inputText.nextDouble());
 					
 					calcRoR.calcRateOfReturn();
@@ -142,10 +142,10 @@ public class UserInterface {
 					
 					System.out.println("Calculating area...");
 					
-					System.out.print("Length: ");
+					System.out.println("Length: ");
 					calcArea.setLength(inputText.nextDouble());
 					
-					System.out.print("Width: ");
+					System.out.println("Width: ");
 					calcArea.setWidth(inputText.nextDouble());
 					
 					calcArea.calculateArea();
@@ -183,7 +183,7 @@ public class UserInterface {
 		System.out.println("7) Area"); 
 		System.out.println("Q) Exit Calculator");
 		System.out.println("");
-		System.out.print("Enter your selection: ");
+		System.out.println("Enter your selection: ");
 	}
 }
 
