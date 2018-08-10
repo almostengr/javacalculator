@@ -9,13 +9,7 @@ package com.twitter.almostengr.javacalculator;
 public class SalesTax {	
 	private static double taxRate;
 	private static double amount;
-	private static double salesTotal;
-	private static double discountdollar = 0;
 	private static double discountPercent = 0;
-	
-	public static void setDiscountdollar(double discountdollar) {
-		SalesTax.discountdollar = discountdollar;
-	}
 	
 	public static void setDiscountPercent(double discountPercent) {
 		SalesTax.discountPercent = discountPercent / 100;
@@ -29,13 +23,9 @@ public class SalesTax {
 		SalesTax.amount = amount;
 	}
 	
-	public static void setSalesTotal(double salesTotal) {
-		SalesTax.salesTotal = salesTotal;
-	}
-	
 	public void calculateSalesTax() {
 		// sales tax formula
-		// total = amount + (1 + taxrate)
+		// total = amount * (1 + taxrate)
 		
 		double totalDiscount = amount * (1 - discountPercent);
 		double total = (amount * (1 + taxRate));
