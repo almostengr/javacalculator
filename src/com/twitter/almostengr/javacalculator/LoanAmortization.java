@@ -1,7 +1,6 @@
 package com.twitter.almostengr.javacalculator;
 
 public class LoanAmortization {
-	private static double paymentPerPeriod;
 	private static double principal;
 	private static double interestRate;
 	private static int payPeriods;
@@ -19,6 +18,8 @@ public class LoanAmortization {
 	}
 
 	public static void calcLoanAmortization() {
+		double paymentPerPeriod;
+		
 		// Loan Amortization formula
 		// A = P * (( r * (1 + r) ^ n) / ((1 + r) ^ n - 1))
 		
