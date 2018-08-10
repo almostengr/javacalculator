@@ -4,22 +4,16 @@ public class CompoundInterest {
 	// compound interest
 	// A = p * (1 + (r/n)) ^ (n * t)
 	
-	private static double accumulated; // represents A
 	private static double principal;  // represents p
 	private static double interestRate; // represents r
 	private static int compounded; // represents n
 	private static int years; // represents t
-		
-	public static void setAccumulated(double accumulated) {
-		CompoundInterest.accumulated = accumulated;
-	}
-		
+
 	public static void setPrincipal(double principal) {
 		CompoundInterest.principal = principal;
 	}
 	
 	public static void setInterestRate(double interestRate) {
-		// CompoundInterest.interestRate = interestRate;
 		CompoundInterest.interestRate = interestRate / 100;
 	}
 	
@@ -32,7 +26,8 @@ public class CompoundInterest {
 	}
 	
 	public static void calculateCompoundInterest() {
-
+		double accumulated;
+		
 		// A = p * (1 + (r/n)) ^ (n * t)
 		accumulated = Math.pow(principal * (1 + (interestRate / compounded)), (compounded * years));
 		
