@@ -171,6 +171,11 @@ public class UserInterface {
 		inputText.close();
 	}
 
+	/**
+	 * 
+	 * Displays the main menu. These are the options that are available to the user 
+	 * based upon the input provided.
+	 */
 	private static void mainMenu() {
 		System.out.println("MAIN MENU");
 		System.out.println("--------------------------");
