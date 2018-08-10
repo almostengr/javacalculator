@@ -4,9 +4,6 @@
 package com.twitter.almostengr.javacalculator;
 
 import java.util.Scanner;
-import javax.swing.plaf.InputMapUIResource;
-
-import com.sun.xml.internal.messaging.saaj.packaging.mime.util.QDecoderStream;
 
 /**
  * @author almostengineer
