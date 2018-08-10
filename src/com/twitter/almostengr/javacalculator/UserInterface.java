@@ -29,13 +29,16 @@ public class UserInterface {
 		
 		while (selection != "Q" || selection != "q") {
 			System.out.println("");
+			// System.out.println("selection: " + selection);
 
 			
 			// display the main menu
 			mainMenu();
 			
 			// read the selection from the next
-			selection = inputText.nextLine();
+			// selection = inputText.nextLine();
+			selection = inputText.next();
+			// System.out.println("selection: " + selection);
 			
 			switch(selection) {
 				case "1":
@@ -164,7 +167,7 @@ public class UserInterface {
 			}
 			
 			// reset the variable
-			selection = "";
+			selection = null;
 		}
 		
 		// exit the scanner
