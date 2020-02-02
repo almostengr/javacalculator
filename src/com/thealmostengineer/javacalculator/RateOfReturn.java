@@ -1,4 +1,4 @@
-package com.twitter.almostengr.javacalculator;
+package com.thealmostengineer.javacalculator;
 
 public class RateOfReturn {
 	private static double initialValue; 

@@ -1,4 +1,4 @@
-package com.twitter.almostengr.javacalculator;
+package com.thealmostengineer.javacalculator;
 
 /**
  * Calculates the sales tax for a given amount and tax rate.

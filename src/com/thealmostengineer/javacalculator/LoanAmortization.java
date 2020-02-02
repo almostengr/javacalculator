@@ -1,4 +1,4 @@
-package com.twitter.almostengr.javacalculator;
+package com.thealmostengineer.javacalculator;
 
 public class LoanAmortization {
 	private static double principal;

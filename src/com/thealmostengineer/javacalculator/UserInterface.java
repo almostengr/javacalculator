@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.twitter.almostengr.javacalculator;
+package com.thealmostengineer.javacalculator;
 
 import java.util.Scanner;
 
